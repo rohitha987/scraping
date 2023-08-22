@@ -23,10 +23,9 @@ for page in range(1,pages+1):
         
         product_data.append([product_url, product_name, product_price, product_rating, product_num_reviews])
     
-    time.sleep(2)  # Delay to avoid bot detection and rate limiting
+    time.sleep(2)  
     print(product_data)
 
-# Save data to CSV
 with open("product_data1.csv", "w", newline="", encoding="utf-8") as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(["Product URL", "Product Name", "Product Price", "Rating", "Number of Reviews"])
