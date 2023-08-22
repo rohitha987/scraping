@@ -31,6 +31,7 @@ with open("product_data1.csv", "w", newline="", encoding="utf-8") as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(["Product URL", "Product Name", "Product Price", "Rating", "Number of Reviews"])
     csvwriter.writerows(product_data)
+#Due to the dynamic changes in the website I am unable to scrape other things
 
 
 
